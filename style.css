@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500;600;700&family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;500;600;700&family=Lexend+Deca:wght@100;200;300;400&family=Outfit:wght@100;300;400;600&family=Red+Hat+Display:wght@300;400;500;700;900&family=Spartan:wght@400;500;700&display=swap');
+body{
+    height: 245vh;
+    font-family: "Spartan", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px 0px, 0px 1150px;
+}
+.container{
+    width: 340px;
+}
+.intro{
+    text-align: center;
+}
+.title{
+    color: hsl(300, 32%, 31%);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 24px;
+}
+.resume{
+    color: hsl(303, 10%, 53%);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.all-rates{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.rate{
+    background-color: hsl(300, 24%, 96%);
+    width: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(300, 32%, 31%);
+}
+.stars{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 140px;
+    padding-bottom: 15px;
+}
+.stars img{
+    width: 20px;
+}
+
+.cards{
+}
+section{
+    background-color: hsl(300, 43%, 22%);
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+.profil{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.profil>img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.name{
+    font-weight: 500;
+    line-height: 22px;
+}
+span{
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+.description{
+    line-height: 24px;
+}
