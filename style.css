@@ -67,7 +67,7 @@ body{
 }
 .rate{
     background-color: hsl(300, 24%, 96%);
-    width: 490px;
+    width: 85%;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 8px;
@@ -82,12 +82,12 @@ body{
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-    width: 140px;
+    width: 30%;
     margin-left: 2rem;
     margin-right: 2rem;
 }
 .stars img{
-    width: 19px;
+    width: 13%;
 }
 
 .cards{
@@ -115,7 +115,7 @@ body{
 
 }
 section{
-    width: 320px;
+    width: 80%;
     background-color: hsl(300, 43%, 22%);
     height: 200px;
     display: flex;
