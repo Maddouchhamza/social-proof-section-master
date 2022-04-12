@@ -3,11 +3,18 @@ body{
     height: 100vh;
     font-family: "Spartan", sans-serif;
     display: flex;
+    flex-direction: column;
+    position: relative;
     justify-content: center;
     align-items: center;
     background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: 0px 0px, 400px 100px;
+}
+.attribution{
+    position: relative;
+    bottom: 0px;
+    top: 100px;    
 }
 .container{
     height: 70vh;
@@ -150,4 +157,149 @@ span{
 }
 .description{
     line-height: 24px;
+}
+
+@media screen and (max-width:425px){
+    body{
+        height: 220vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0px 0px, 0px 1030px;
+    }
+    .container{
+        height: 210vh;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 60%;
+        gap: 10px 0px;
+    }
+    .intro{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .title{
+        color: hsl(300, 32%, 31%);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 30px;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .resume{
+        color: hsl(303, 10%, 53%);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        padding-top: 1.5rem;
+        padding-right: 0rem;
+    }
+    
+    .all-rates{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 33% 33% 33%;
+        row-gap: 3px;
+        align-items: center;
+    }
+    #one{
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+    }
+    #two{
+        grid-row: 2/3;
+        justify-self: center;
+    }
+    #tree{
+        grid-row: 3/4;
+        justify-self: center;
+        align-self: center;
+    }
+    .rate{
+        background-color: hsl(300, 24%, 96%);
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 85%;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+        color: hsl(300, 32%, 31%);
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .stars{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        width: 38%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .stars img{
+        width: 13%;
+    }
+    
+    .cards{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row: 33.3% 33.3% 33.3%;
+    }
+    .smith{
+        width: fit-content;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: flex-end;
+        justify-self: center;
+    }
+    .roberts{
+        width: fit-content;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-self: center;
+        justify-self: center;
+    
+    }
+    .wallace{
+        width: fit-content;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-self: flex-start;
+        justify-self: center;
+    
+    }
+    section{
+        background-color: hsl(300, 43%, 22%);
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        padding-left: 30px;
+        padding-right: 25px;
+        padding-top: 22px;
+        padding-bottom: 20px;
+    }
 }
